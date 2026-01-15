@@ -1,0 +1,141 @@
+.exercises-guide {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.exercises-guide h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.categories-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.category-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.category-icon {
+  font-size: 1.2rem;
+}
+
+.exercises-content h3 {
+  text-align: center;
+  color: #495057;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.exercises-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.exercise-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.exercise-card h4 {
+  color: #333;
+  margin: 0 0 15px 0;
+  font-size: 1.4rem;
+}
+
+.exercise-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.exercise-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.duration,
+.frequency {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  background: #f1f3f4;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #5f6368;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .exercises-guide h2 {
+    font-size: 1.8rem;
+  }
+
+  .categories-nav {
+    gap: 10px;
+  }
+
+  .category-btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .category-icon {
+    display: none;
+  }
+
+  .exercise-card {
+    padding: 20px;
+  }
+
+  .exercise-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

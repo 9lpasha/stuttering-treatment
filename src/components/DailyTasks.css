@@ -1,0 +1,101 @@
+.daily-tasks {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tasks-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 15px;
+  color: white;
+}
+
+.tasks-header h2 {
+  margin: 0 0 15px 0;
+  font-size: 2rem;
+}
+
+.date-display {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.progress-info {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.progress-bar {
+  height: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 100%);
+  border-radius: 6px;
+  transition: width 0.5s ease;
+}
+
+.add-task {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.add-task input:focus {
+  outline: none;
+  border-color: #4facfe;
+}
+
+.add-task button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.add-task button:hover {
+  transform: translateY(-2px);
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .tasks-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .add-task {
+    flex-direction: column;
+  }
+
+  .add-task button {
+    align-self: flex-start;
+  }
+}
